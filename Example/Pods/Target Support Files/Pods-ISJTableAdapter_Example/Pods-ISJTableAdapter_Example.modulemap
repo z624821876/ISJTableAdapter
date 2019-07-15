@@ -1,0 +1,6 @@
+framework module Pods_ISJTableAdapter_Example {
+  umbrella header "Pods-ISJTableAdapter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

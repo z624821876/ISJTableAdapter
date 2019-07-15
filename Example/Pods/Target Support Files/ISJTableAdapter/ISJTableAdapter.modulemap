@@ -1,0 +1,6 @@
+framework module ISJTableAdapter {
+  umbrella header "ISJTableAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

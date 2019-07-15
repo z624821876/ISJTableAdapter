@@ -1,0 +1,25 @@
+{
+  "name": "ISJTableAdapter",
+  "version": "0.1.0",
+  "summary": "A short description of ISJTableAdapter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/z624821876/ISJTableAdapter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "z624821876": "yu624821876@163.com"
+  },
+  "source": {
+    "git": "https://github.com/z624821876/ISJTableAdapter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "ISJTableAdapter/Classes/**/*.{h,m}",
+    "ISJTableAdapter/Classes/*.{h,m}"
+  ]
+}

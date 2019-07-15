@@ -1,0 +1,16 @@
+PODS:
+  - ISJTableAdapter (0.1.0)
+
+DEPENDENCIES:
+  - ISJTableAdapter (from `../`)
+
+EXTERNAL SOURCES:
+  ISJTableAdapter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ISJTableAdapter: 6f34a83035cf87549718e640d83529f9760a97af
+
+PODFILE CHECKSUM: da65683e3358904b046448b997a733184976029a
+
+COCOAPODS: 1.7.2
