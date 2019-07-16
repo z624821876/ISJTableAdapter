@@ -6,15 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		175537484917F6B3EA807C5B84708028 /* ISJTableAdapter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 66E3F65EF0736A07E9FFD6F848202176 /* Build configuration list for PBXAggregateTarget "ISJTableAdapter" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ISJTableAdapter;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		02B52E1C9E0C1E82E975B208DC697F80 /* ISJTableAdapterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A10C564419B213F2962CE1F2A887B6A /* ISJTableAdapterModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		312721AA54EC416AC117CB66560BC610 /* Pods-ISJTableAdapter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53866BBE0EC64A8977378CC1500AABBD /* Pods-ISJTableAdapter_Example-dummy.m */; };
-		4D60550A0684E25192C14ED84F7591C5 /* ISJTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 274F78046DAFA51EFDC058B0CBD0FD78 /* ISJTableAdapter.m */; };
-		502D8CC5F9CFB5A3999512DCFBC60F0E /* ISJTableAdapter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5065214D50BBC5B855B549619281189 /* ISJTableAdapter-dummy.m */; };
-		637772DF0AEFB117F0EE898BCC9E62DA /* ISJTableAdapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE57E7396D89BF71C699EB5686F105 /* ISJTableAdapterModel.m */; };
 		687B576D27AFF3C40C2D2D23B0E2CB76 /* Pods-ISJTableAdapter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C413D5A1BC28A507DF4D03007CF478 /* Pods-ISJTableAdapter_Tests-dummy.m */; };
-		B5991C94A7E6BD32759DBCFE50555669 /* ISJTableAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D65CF11D22084CC13D14DAF251E6AE /* ISJTableAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FA12C20377593C34645D88B08B0F269F /* ISJTableAdapterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 821B9A7CDC6E85AD9B967E49B1790012 /* ISJTableAdapterDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +42,21 @@
 
 /* Begin PBXFileReference section */
 		099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ISJTableAdapter_Tests.a"; path = "libPods-ISJTableAdapter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CD9DFF12F9B0F5FF8D913E7D09C1453 /* ISJTableAdapter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISJTableAdapter.xcconfig; sourceTree = "<group>"; };
-		274F78046DAFA51EFDC058B0CBD0FD78 /* ISJTableAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISJTableAdapter.m; path = ISJTableAdapter/Classes/ISJTableAdapter.m; sourceTree = "<group>"; };
-		4F41CC120F40E4AE0494B5FE6DC2BA8C /* ISJTableAdapter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISJTableAdapter-prefix.pch"; sourceTree = "<group>"; };
+		17BEAB7CFC61D4C2B90349D1CAAC9EAC /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.1/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		53866BBE0EC64A8977378CC1500AABBD /* Pods-ISJTableAdapter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Example-dummy.m"; sourceTree = "<group>"; };
-		54A56CFBD8DB676C1F6C19009D2FECC3 /* libISJTableAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libISJTableAdapter.a; path = libISJTableAdapter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A10C564419B213F2962CE1F2A887B6A /* ISJTableAdapterModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ISJTableAdapterModel.h; sourceTree = "<group>"; };
+		5811BEECD67A7A5E9DA8D51CBC21265C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5DD39727C5D23AA1D0762A114E9F7F66 /* Pods-ISJTableAdapter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		62F973E698EF1B1B59E7198292818257 /* libPods-ISJTableAdapter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ISJTableAdapter_Example.a"; path = "libPods-ISJTableAdapter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66946352FDB51506E0B4C83F39A12025 /* Pods-ISJTableAdapter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		67D65CF11D22084CC13D14DAF251E6AE /* ISJTableAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISJTableAdapter.h; path = ISJTableAdapter/Classes/ISJTableAdapter.h; sourceTree = "<group>"; };
 		6A3CFB04BEACD0EF9740B88B52073C49 /* Pods-ISJTableAdapter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76C413D5A1BC28A507DF4D03007CF478 /* Pods-ISJTableAdapter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Tests-dummy.m"; sourceTree = "<group>"; };
-		821B9A7CDC6E85AD9B967E49B1790012 /* ISJTableAdapterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISJTableAdapterDelegate.h; path = ISJTableAdapter/Classes/ISJTableAdapterDelegate.h; sourceTree = "<group>"; };
-		82DE57E7396D89BF71C699EB5686F105 /* ISJTableAdapterModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ISJTableAdapterModel.m; sourceTree = "<group>"; };
-		8E2D4CA387B8BE29C0B82AF959BCE208 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5065214D50BBC5B855B549619281189 /* ISJTableAdapter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISJTableAdapter-dummy.m"; sourceTree = "<group>"; };
 		B2A8DAD2B19BD9B10AFC76BC962DCBF5 /* Pods-ISJTableAdapter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD497FBB66A8F3EB635CC5758BB8D23F /* ISJTableAdapter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ISJTableAdapter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C515370B998FF12A76AAE1B1BC6E5746 /* Pods-ISJTableAdapter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C5FAC47632772B8B165F17E156BD6427 /* ISJTableAdapter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ISJTableAdapter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CA79F1FFAB031093B2C5D5D70C6F85A8 /* Pods-ISJTableAdapter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISJTableAdapter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DA562F6D36D24F277C9A6ED0BD9579EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D986E29F2108DB8FEA7F458DBDDDA81C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISJTableAdapter.xcconfig; sourceTree = "<group>"; };
 		F13E99225D4E97EA3B8A380343382EC4 /* Pods-ISJTableAdapter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F9F37A7F9974BF6FF3BBEC7C134AE35A /* Pods-ISJTableAdapter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISJTableAdapter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,16 +76,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFB55853BF27773A51F668F2580FC474 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C98EDF25B070BB233D8549451207447 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D03771E05DF25D6CF5038B8E46CE56C /* ISJTableAdapter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		228C617336407400F7D030080E2AA80C /* Pods-ISJTableAdapter_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,15 +100,14 @@
 			path = "Target Support Files/Pods-ISJTableAdapter_Example";
 			sourceTree = "<group>";
 		};
-		351513C0E0207846C21769FA001A228D /* Support Files */ = {
+		3B0C4AEF87A597E1732D1955D3ADEB0E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0CD9DFF12F9B0F5FF8D913E7D09C1453 /* ISJTableAdapter.xcconfig */,
-				A5065214D50BBC5B855B549619281189 /* ISJTableAdapter-dummy.m */,
-				4F41CC120F40E4AE0494B5FE6DC2BA8C /* ISJTableAdapter-prefix.pch */,
+				BD497FBB66A8F3EB635CC5758BB8D23F /* ISJTableAdapter.podspec */,
+				D986E29F2108DB8FEA7F458DBDDDA81C /* LICENSE */,
+				5811BEECD67A7A5E9DA8D51CBC21265C /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ISJTableAdapter";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		54849A71932A32CE63A4B1795088E83E /* Targets Support Files */ = {
@@ -118,30 +117,6 @@
 				74AAE8ED78CB1A228E8FE05D3D009267 /* Pods-ISJTableAdapter_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		63BEC61BDBAB45DD04E7ED6673A66A8A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				54A56CFBD8DB676C1F6C19009D2FECC3 /* libISJTableAdapter.a */,
-				62F973E698EF1B1B59E7198292818257 /* libPods-ISJTableAdapter_Example.a */,
-				099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		73AC06869BC80AB85C2C295F579EEDFE /* ISJTableAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				67D65CF11D22084CC13D14DAF251E6AE /* ISJTableAdapter.h */,
-				274F78046DAFA51EFDC058B0CBD0FD78 /* ISJTableAdapter.m */,
-				821B9A7CDC6E85AD9B967E49B1790012 /* ISJTableAdapterDelegate.h */,
-				F4B1BE643F2BAA5BDAC473534513513E /* Model */,
-				7DB0EE5924B195D7B0E104DD549F4848 /* Pod */,
-				351513C0E0207846C21769FA001A228D /* Support Files */,
-			);
-			name = ISJTableAdapter;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		74AAE8ED78CB1A228E8FE05D3D009267 /* Pods-ISJTableAdapter_Tests */ = {
@@ -157,31 +132,50 @@
 			path = "Target Support Files/Pods-ISJTableAdapter_Tests";
 			sourceTree = "<group>";
 		};
-		7DB0EE5924B195D7B0E104DD549F4848 /* Pod */ = {
+		7D03771E05DF25D6CF5038B8E46CE56C /* ISJTableAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				C5FAC47632772B8B165F17E156BD6427 /* ISJTableAdapter.podspec */,
-				DA562F6D36D24F277C9A6ED0BD9579EA /* LICENSE */,
-				8E2D4CA387B8BE29C0B82AF959BCE208 /* README.md */,
+				B14BEACBEE920B0F7EB2BA6DB0391CF8 /* Frameworks */,
+				3B0C4AEF87A597E1732D1955D3ADEB0E /* Pod */,
+				BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */,
 			);
-			name = Pod;
+			name = ISJTableAdapter;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		C146DB4A23C9F56C32562DA7BD4BBF2C /* Development Pods */ = {
+		8C14C1856C1E95222E9B76DDF1167AB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73AC06869BC80AB85C2C295F579EEDFE /* ISJTableAdapter */,
+				62F973E698EF1B1B59E7198292818257 /* libPods-ISJTableAdapter_Example.a */,
+				099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */,
 			);
-			name = "Development Pods";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B14BEACBEE920B0F7EB2BA6DB0391CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17BEAB7CFC61D4C2B90349D1CAAC9EAC /* ISJTableAdapter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ISJTableAdapter";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C146DB4A23C9F56C32562DA7BD4BBF2C /* Development Pods */,
+				1C98EDF25B070BB233D8549451207447 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				63BEC61BDBAB45DD04E7ED6673A66A8A /* Products */,
+				8C14C1856C1E95222E9B76DDF1167AB5 /* Products */,
 				54849A71932A32CE63A4B1795088E83E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -191,16 +185,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F4B1BE643F2BAA5BDAC473534513513E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5A10C564419B213F2962CE1F2A887B6A /* ISJTableAdapterModel.h */,
-				82DE57E7396D89BF71C699EB5686F105 /* ISJTableAdapterModel.m */,
-			);
-			name = Model;
-			path = ISJTableAdapter/Classes/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,36 +204,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEE8B201C8CB4E667B44ACF4C7E05686 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5991C94A7E6BD32759DBCFE50555669 /* ISJTableAdapter.h in Headers */,
-				FA12C20377593C34645D88B08B0F269F /* ISJTableAdapterDelegate.h in Headers */,
-				02B52E1C9E0C1E82E975B208DC697F80 /* ISJTableAdapterModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		175537484917F6B3EA807C5B84708028 /* ISJTableAdapter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5F74DC9279BE33BEAE1DFF89E7EB843 /* Build configuration list for PBXNativeTarget "ISJTableAdapter" */;
-			buildPhases = (
-				BEE8B201C8CB4E667B44ACF4C7E05686 /* Headers */,
-				D1AC96AB621A613A06356B2D9CC6A01F /* Sources */,
-				EFB55853BF27773A51F668F2580FC474 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ISJTableAdapter;
-			productName = ISJTableAdapter;
-			productReference = 54A56CFBD8DB676C1F6C19009D2FECC3 /* libISJTableAdapter.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		640C0F24A11D1BF631431C1CA3E064F9 /* Pods-ISJTableAdapter_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7FF93F8A093A77DC160E9788C88A4FC /* Build configuration list for PBXNativeTarget "Pods-ISJTableAdapter_Example" */;
@@ -303,7 +260,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 63BEC61BDBAB45DD04E7ED6673A66A8A /* Products */;
+			productRefGroup = 8C14C1856C1E95222E9B76DDF1167AB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -328,16 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				687B576D27AFF3C40C2D2D23B0E2CB76 /* Pods-ISJTableAdapter_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1AC96AB621A613A06356B2D9CC6A01F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				502D8CC5F9CFB5A3999512DCFBC60F0E /* ISJTableAdapter-dummy.m in Sources */,
-				4D60550A0684E25192C14ED84F7591C5 /* ISJTableAdapter.m in Sources */,
-				637772DF0AEFB117F0EE898BCC9E62DA /* ISJTableAdapterModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,31 +328,6 @@
 			};
 			name = Release;
 		};
-		16CD531ABDDEB8189A40923D4CCC7C0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CD9DFF12F9B0F5FF8D913E7D09C1453 /* ISJTableAdapter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ISJTableAdapter/ISJTableAdapter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ISJTableAdapter;
-				PRODUCT_NAME = ISJTableAdapter;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		17EF02A87B2B6135942579D578F0D8F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C515370B998FF12A76AAE1B1BC6E5746 /* Pods-ISJTableAdapter_Example.release.xcconfig */;
@@ -427,30 +349,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		2E813CF2B46E51E872DC91341CF8168E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CD9DFF12F9B0F5FF8D913E7D09C1453 /* ISJTableAdapter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ISJTableAdapter/ISJTableAdapter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ISJTableAdapter;
-				PRODUCT_NAME = ISJTableAdapter;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		31FA62DBDE550B2EE3ADA8C06D41F9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -530,6 +428,33 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		59D39DDF64C37D4655BECB82023E3D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FFCAABECAF6842FBAB87891587A5CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -639,11 +564,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5F74DC9279BE33BEAE1DFF89E7EB843 /* Build configuration list for PBXNativeTarget "ISJTableAdapter" */ = {
+		66E3F65EF0736A07E9FFD6F848202176 /* Build configuration list for PBXAggregateTarget "ISJTableAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E813CF2B46E51E872DC91341CF8168E /* Debug */,
-				16CD531ABDDEB8189A40923D4CCC7C0E /* Release */,
+				59D39DDF64C37D4655BECB82023E3D3B /* Debug */,
+				5FFCAABECAF6842FBAB87891587A5CC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

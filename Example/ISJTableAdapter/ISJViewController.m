@@ -7,7 +7,7 @@
 //
 
 #import "ISJViewController.h"
-#import <ISJTableAdapter.h>
+#import <ISJTableAdapter/ISJTableAdapter.h>
 
 @interface ISJTableViewCell : UITableViewCell<ISJTableAdapterCellDelegate>
 
