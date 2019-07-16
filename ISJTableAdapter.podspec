@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISJTableAdapter'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '一个简单的UITableView适配器'
 
   s.homepage         = 'https://github.com/z624821876'
@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
   
+  s.static_framework = true
+
   # s.resource_bundles = {
   #   'ISJTableAdapter' => ['ISJTableAdapter/Assets/*.png']
   # }

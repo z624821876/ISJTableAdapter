@@ -21,6 +21,7 @@
     return self.delegate;
 }
 
+#pragma mark - TableView Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return _dataSource.count;
 }
@@ -116,5 +117,8 @@
         cellModel.didSelectBlock(tableView, indexPath);
     }
 }
+
+#pragma mark - TableView Delegate
+
 
 @end

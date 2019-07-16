@@ -1,9 +1,8 @@
 {
   "name": "ISJTableAdapter",
   "version": "0.1.0",
-  "summary": "A short description of ISJTableAdapter.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/z624821876/ISJTableAdapter",
+  "summary": "一个简单的UITableView适配器",
+  "homepage": "https://github.com/z624821876",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -21,5 +20,6 @@
   "source_files": [
     "ISJTableAdapter/Classes/**/*.{h,m}",
     "ISJTableAdapter/Classes/*.{h,m}"
-  ]
+  ],
+  "static_framework": true
 }
