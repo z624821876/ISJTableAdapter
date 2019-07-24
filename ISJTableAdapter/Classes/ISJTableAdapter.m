@@ -47,7 +47,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     ISJTableAdapterModel *model = _dataSource[indexPath.section];
     id<ISJTableAdapterViewModelDelegate> cellModel = model.dataSource[indexPath.row];
-    return cellModel.automaticDimension ? UITableViewAutomaticDimension : cellModel.height;
+    return cellModel.height;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -60,7 +60,7 @@
     ISJTableAdapterModel *model = _dataSource[section];
     if (!model.headerModel) return CGFLOAT_MIN;
     id<ISJTableAdapterViewModelDelegate> cellModel = model.headerModel;
-    return cellModel.automaticDimension ? UITableViewAutomaticDimension : cellModel.height;
+    return cellModel.height;
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
     ISJTableAdapterModel *model = _dataSource[section];
@@ -73,7 +73,7 @@
     ISJTableAdapterModel *model = _dataSource[section];
     if (!model.footerModel) return CGFLOAT_MIN;
     id<ISJTableAdapterViewModelDelegate> cellModel = model.footerModel;
-    return cellModel.automaticDimension ? UITableViewAutomaticDimension : cellModel.height;
+    return cellModel.height;
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
     ISJTableAdapterModel *model = _dataSource[section];

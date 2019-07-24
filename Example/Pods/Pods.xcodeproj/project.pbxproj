@@ -49,7 +49,7 @@
 		66946352FDB51506E0B4C83F39A12025 /* Pods-ISJTableAdapter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A3CFB04BEACD0EF9740B88B52073C49 /* Pods-ISJTableAdapter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76C413D5A1BC28A507DF4D03007CF478 /* Pods-ISJTableAdapter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Tests-dummy.m"; sourceTree = "<group>"; };
-		83E92588263E299590D5C3E032C990B1 /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.3/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
+		9675A4DCE631B8AC83C96A3FD8F1737B /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.4/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B2A8DAD2B19BD9B10AFC76BC962DCBF5 /* Pods-ISJTableAdapter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD497FBB66A8F3EB635CC5758BB8D23F /* ISJTableAdapter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ISJTableAdapter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -132,10 +132,10 @@
 			path = "Target Support Files/Pods-ISJTableAdapter_Tests";
 			sourceTree = "<group>";
 		};
-		7CC083A42DE29F96B708337053304FCF /* Frameworks */ = {
+		77B9C7577BDE9C2D843A4A3B16DEF7B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83E92588263E299590D5C3E032C990B1 /* ISJTableAdapter.framework */,
+				9675A4DCE631B8AC83C96A3FD8F1737B /* ISJTableAdapter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 		7D03771E05DF25D6CF5038B8E46CE56C /* ISJTableAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				7CC083A42DE29F96B708337053304FCF /* Frameworks */,
+				77B9C7577BDE9C2D843A4A3B16DEF7B6 /* Frameworks */,
 				3B0C4AEF87A597E1732D1955D3ADEB0E /* Pod */,
 				BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */,
 			);

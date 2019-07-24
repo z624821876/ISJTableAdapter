@@ -20,9 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 自适应估算高度 */
 - (CGFloat)estimatedHeight;
 
-/** 是否自适应行高 */
-- (BOOL)automaticDimension;
-
 @optional
 @property (nonatomic, copy) void(^didSelectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
