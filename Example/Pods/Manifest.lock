@@ -1,5 +1,5 @@
 PODS:
-  - ISJTableAdapter (0.1.8)
+  - ISJTableAdapter (0.1.9)
 
 DEPENDENCIES:
   - ISJTableAdapter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ISJTableAdapter: 38479ac8a493096c9d0b6111f9bca64d8ead3508
+  ISJTableAdapter: 902b154fa197f772200d3411639e99f4b18b8366
 
 PODFILE CHECKSUM: 01b023153f88e9672912e7a45922532f417e851d
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISJTableAdapter'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = '一个简单的UITableView适配器'
 
   s.homepage         = 'https://github.com/z624821876'

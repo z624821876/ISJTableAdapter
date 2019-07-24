@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ISJTableAdapter_Tests.a"; path = "libPods-ISJTableAdapter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		24B706EF02BAC16DFAE35A87298D9595 /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.8/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		53866BBE0EC64A8977378CC1500AABBD /* Pods-ISJTableAdapter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Example-dummy.m"; sourceTree = "<group>"; };
 		5811BEECD67A7A5E9DA8D51CBC21265C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5DD39727C5D23AA1D0762A114E9F7F66 /* Pods-ISJTableAdapter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		66946352FDB51506E0B4C83F39A12025 /* Pods-ISJTableAdapter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A3CFB04BEACD0EF9740B88B52073C49 /* Pods-ISJTableAdapter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76C413D5A1BC28A507DF4D03007CF478 /* Pods-ISJTableAdapter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Tests-dummy.m"; sourceTree = "<group>"; };
+		7919CAC4C23EE92AA2F17AE9DF2E48B4 /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.9/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B2A8DAD2B19BD9B10AFC76BC962DCBF5 /* Pods-ISJTableAdapter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD497FBB66A8F3EB635CC5758BB8D23F /* ISJTableAdapter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ISJTableAdapter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -110,14 +110,6 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		3C2460A1DE6200F80BA961307E211713 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				24B706EF02BAC16DFAE35A87298D9595 /* ISJTableAdapter.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		54849A71932A32CE63A4B1795088E83E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +135,7 @@
 		7D03771E05DF25D6CF5038B8E46CE56C /* ISJTableAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				3C2460A1DE6200F80BA961307E211713 /* Frameworks */,
+				BE30D847417FAF573A24132484E123C5 /* Frameworks */,
 				3B0C4AEF87A597E1732D1955D3ADEB0E /* Pod */,
 				BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */,
 			);
@@ -167,6 +159,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ISJTableAdapter";
+			sourceTree = "<group>";
+		};
+		BE30D847417FAF573A24132484E123C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7919CAC4C23EE92AA2F17AE9DF2E48B4 /* ISJTableAdapter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {

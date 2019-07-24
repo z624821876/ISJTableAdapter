@@ -64,12 +64,12 @@
     id<ISJTableAdapterViewModelDelegate> cellModel = model.headerModel;
     return cellModel.height;
 }
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
-    ISJTableAdapterModel *model = _dataSource[section];
-    if (!model.headerModel) return 0;
-    id<ISJTableAdapterViewModelDelegate> cellModel = model.headerModel;
-    return cellModel.estimatedHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
+//    ISJTableAdapterModel *model = _dataSource[section];
+//    if (!model.headerModel) return 0;
+//    id<ISJTableAdapterViewModelDelegate> cellModel = model.headerModel;
+//    return cellModel.estimatedHeight;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     ISJTableAdapterModel *model = _dataSource[section];
@@ -77,12 +77,12 @@
     id<ISJTableAdapterViewModelDelegate> cellModel = model.footerModel;
     return cellModel.height;
 }
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
-    ISJTableAdapterModel *model = _dataSource[section];
-    if (!model.footerModel) return 0;
-    id<ISJTableAdapterViewModelDelegate> cellModel = model.footerModel;
-    return cellModel.estimatedHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
+//    ISJTableAdapterModel *model = _dataSource[section];
+//    if (!model.footerModel) return 0;
+//    id<ISJTableAdapterViewModelDelegate> cellModel = model.footerModel;
+//    return cellModel.estimatedHeight;
+//}
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section  {
     ISJTableAdapterModel *model = _dataSource[section];
