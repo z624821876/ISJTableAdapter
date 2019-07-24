@@ -40,13 +40,16 @@
 
 @property (nonatomic, copy) void(^didSelectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
+@property (nonatomic, copy) NSString    *title;
+@property (nonatomic, copy) NSString    *subTitle;
+
 @end
 
 @implementation ISJTableCellViewModel
 
 /** 行高 */
 - (CGFloat)height {
-    return 60;
+    return 50.f;
 }
 
 /** 自适应估算高度 */
@@ -78,43 +81,109 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSMutableArray *array = [NSMutableArray array];
-    NSMutableArray *rows = [NSMutableArray array];
-    for (int i = 0; i < 10; i ++) {
-        ISJTableAdapterModel *model = [ISJTableAdapterModel new];
-        [rows removeAllObjects];
-        for (int j = 0; j < 10; j ++) {
-            ISJTableCellViewModel *viewModel = [ISJTableCellViewModel new];
-            viewModel.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
-                NSLog(@"%@----%@", tableView, indexPath);
-            };
-            [rows addObject:viewModel];
-        }
-        model.dataSource = [rows copy];
-        [array addObject:model];
-    }
-    
-    self.adapter = [[ISJTableAdapter alloc] init];
-    self.adapter.dataSource = [array copy];
-    self.adapter.delegate = self;
-    
-    NSMutableArray *array1 = [NSMutableArray array];
-    [array1 addObject:NSStringFromSelector(@selector(scrollViewDidScroll:))];
-    self.adapter.extensionMethods = [array1 copy];
-    
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.delegate = self.adapter;
     tableView.dataSource = self.adapter;
+    tableView.estimatedSectionFooterHeight = 0;
+    tableView.estimatedSectionHeaderHeight = 0;
+    tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+
     [tableView registerClass:[ISJTableViewCell class] forCellReuseIdentifier:@"ISJTableViewCell"];
     [self.view addSubview:tableView];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"-------");
+- (void)loadRequest {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSMutableArray *array = [NSMutableArray array];
+        NSMutableArray *rows = [NSMutableArray array];
+        ISJTableAdapterModel *section0 = [ISJTableAdapterModel new];
+        [array addObject:section0];
+        [rows removeAllObjects];
+        {
+            ISJTableCellViewModel *row0 = [ISJTableCellViewModel new];
+            row0.title = @"账号与安全";
+            row0.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row0];
+            
+            ISJTableCellViewModel *row1 = [ISJTableCellViewModel new];
+            row1.title = @"我的收获地址";
+            row1.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row1];
+            section0.dataSource = [rows copy];
+        }
+        
+        ISJTableAdapterModel *section1 = [ISJTableAdapterModel new];
+        [array addObject:section1];
+        [rows removeAllObjects];
+        {
+            ISJTableCellViewModel *row0 = [ISJTableCellViewModel new];
+            row0.title = @"扫一扫";
+            row0.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row0];
+            
+            ISJTableCellViewModel *row1 = [ISJTableCellViewModel new];
+            row1.title = @"清空缓存";
+            row1.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row1];
+            
+            ISJTableCellViewModel *row2 = [ISJTableCellViewModel new];
+            row2.title = @"意见反馈";
+            row2.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row2];
+            
+            ISJTableCellViewModel *row3 = [ISJTableCellViewModel new];
+            row3.title = @"隐私协议";
+            row3.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row3];
+            section1.dataSource = [rows copy];
+        }
+        
+        ISJTableAdapterModel *section2 = [ISJTableAdapterModel new];
+        [array addObject:section2];
+        [rows removeAllObjects];
+        {
+            ISJTableCellViewModel *row0 = [ISJTableCellViewModel new];
+            row0.title = @"版本号";
+            row0.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row0];
+            
+            ISJTableCellViewModel *row1 = [ISJTableCellViewModel new];
+            row1.title = @"爱上街平台服务协议";
+            row1.didSelectBlock = ^(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"%@----%@", tableView, indexPath);
+            };
+            [rows addObject:row1];
+            section2.dataSource = [rows copy];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.adapter.dataSource = [array copy];
+        });
+    });
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"didSelectRowAtIndexPath");
+- (ISJTableAdapter *)adapter {
+    if (!_adapter) {
+
+        self.adapter = [[ISJTableAdapter alloc] init];
+        self.adapter.delegate = self;
+    }
+    return _adapter;
 }
 
 - (void)didReceiveMemoryWarning
