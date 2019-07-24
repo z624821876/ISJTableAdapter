@@ -8,22 +8,22 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISJTableAdapter'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '一个简单的UITableView适配器'
 
   s.homepage         = 'https://github.com/z624821876'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'z624821876' => 'yu624821876@163.com' }
-  s.source           = { :git => 'https://github.com/z624821876/ISJTableAdapter.git', :tag => s.version.to_s }
-#  s.source           = { :path => '/Users/aladin/Documents/项目/ISJTableAdapter'}
+#  s.source           = { :git => 'https://github.com/z624821876/ISJTableAdapter.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/aladin/Documents/项目/ISJTableAdapter'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-#  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 #  if ENV['lib']
 #    s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 #  else
-#    s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
+#   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
 #  end
   s.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 

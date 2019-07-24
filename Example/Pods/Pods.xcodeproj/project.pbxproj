@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ISJTableAdapter_Tests.a"; path = "libPods-ISJTableAdapter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12C46C95874AA366A424D1F4DD666A9E /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.5/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		53866BBE0EC64A8977378CC1500AABBD /* Pods-ISJTableAdapter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Example-dummy.m"; sourceTree = "<group>"; };
 		5811BEECD67A7A5E9DA8D51CBC21265C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5DD39727C5D23AA1D0762A114E9F7F66 /* Pods-ISJTableAdapter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		6A3CFB04BEACD0EF9740B88B52073C49 /* Pods-ISJTableAdapter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISJTableAdapter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76C413D5A1BC28A507DF4D03007CF478 /* Pods-ISJTableAdapter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISJTableAdapter_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F83F2FB246EA9557201B6149109C023 /* ISJTableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISJTableAdapter.framework; path = "ISJTableAdapter-0.1.6/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework"; sourceTree = "<group>"; };
 		B2A8DAD2B19BD9B10AFC76BC962DCBF5 /* Pods-ISJTableAdapter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD497FBB66A8F3EB635CC5758BB8D23F /* ISJTableAdapter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ISJTableAdapter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C515370B998FF12A76AAE1B1BC6E5746 /* Pods-ISJTableAdapter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISJTableAdapter_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,14 +119,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6283D667752662867C81B3A5E5AC94E3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				12C46C95874AA366A424D1F4DD666A9E /* ISJTableAdapter.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		74AAE8ED78CB1A228E8FE05D3D009267 /* Pods-ISJTableAdapter_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +135,7 @@
 		7D03771E05DF25D6CF5038B8E46CE56C /* ISJTableAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				6283D667752662867C81B3A5E5AC94E3 /* Frameworks */,
+				B301FC8FCE3698FDA54B3363773B8124 /* Frameworks */,
 				3B0C4AEF87A597E1732D1955D3ADEB0E /* Pod */,
 				BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */,
 			);
@@ -158,6 +150,14 @@
 				099A47556E9AA025E06E3F549457F0AA /* libPods-ISJTableAdapter_Tests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B301FC8FCE3698FDA54B3363773B8124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F83F2FB246EA9557201B6149109C023 /* ISJTableAdapter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BAE1A7C5D2314B5E4A86286100F79D52 /* Support Files */ = {
@@ -306,6 +306,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06726C9FCA447CCB97945C788948D563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		0D59FDE2C1700CF7A72BD767256A19C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5DD39727C5D23AA1D0762A114E9F7F66 /* Pods-ISJTableAdapter_Tests.release.xcconfig */;
@@ -350,6 +364,19 @@
 			};
 			name = Release;
 		};
+		30CE68DE898CBC577B09F6B30B38BFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		31FA62DBDE550B2EE3ADA8C06D41F9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F13E99225D4E97EA3B8A380343382EC4 /* Pods-ISJTableAdapter_Example.debug.xcconfig */;
@@ -367,20 +394,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		390395697BA0C355B8D420F4A8B835AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,21 +543,6 @@
 			};
 			name = Debug;
 		};
-		BBE988D5AA00E00D5CA27BE2939F3CC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B5A4637DF7962C6C096FD0487D14C2 /* ISJTableAdapter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,8 +567,8 @@
 		66E3F65EF0736A07E9FFD6F848202176 /* Build configuration list for PBXAggregateTarget "ISJTableAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				390395697BA0C355B8D420F4A8B835AA /* Debug */,
-				BBE988D5AA00E00D5CA27BE2939F3CC9 /* Release */,
+				30CE68DE898CBC577B09F6B30B38BFC1 /* Debug */,
+				06726C9FCA447CCB97945C788948D563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
