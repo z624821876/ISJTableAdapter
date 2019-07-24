@@ -36,7 +36,9 @@
     id<ISJTableAdapterViewModelDelegate> cellModel = model.dataSource[indexPath.row];
     if (cellModel.className) {
         UITableViewCell<ISJTableAdapterCellDelegate> *cell = [tableView dequeueReusableCellWithIdentifier:cellModel.className];
-        cell.adapterViewModel = cellModel;
+        if ([cell respondsToSelector:@selector(setAdapterViewModel:)]) {
+            cell.adapterViewModel = cellModel;
+        }
         return cell;
     }else if ([self.delegate respondsToSelector:@selector(tableView:cellModel:cellForRowAtIndexPath:)]) {
         return [self.delegate tableView:tableView cellModel:cellModel cellForRowAtIndexPath:indexPath];
@@ -88,7 +90,9 @@
     id<ISJTableAdapterViewModelDelegate> cellModel = model.headerModel;
     if (cellModel.className) {
         UITableViewHeaderFooterView<ISJTableAdapterCellDelegate> *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:cellModel.className];
-        cell.adapterViewModel = cellModel;
+        if ([cell respondsToSelector:@selector(setAdapterViewModel:)]) {
+            cell.adapterViewModel = cellModel;
+        }
         return cell;
     }else if ([self.delegate respondsToSelector:@selector(tableView:cellModel:viewForHeaderInSection:)]) {
         return [self.delegate tableView:tableView cellModel:cellModel viewForHeaderInSection:section];
@@ -102,7 +106,9 @@
     id<ISJTableAdapterViewModelDelegate> cellModel = model.footerModel;
     if (cellModel.className) {
         UITableViewHeaderFooterView<ISJTableAdapterCellDelegate> *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:cellModel.className];
-        cell.adapterViewModel = cellModel;
+        if ([cell respondsToSelector:@selector(setAdapterViewModel:)]) {
+            cell.adapterViewModel = cellModel;
+        }
         return cell;
     }else if ([self.delegate respondsToSelector:@selector(tableView:cellModel:viewForFooterInSection:)]) {
         return [self.delegate tableView:tableView cellModel:cellModel viewForFooterInSection:section];
