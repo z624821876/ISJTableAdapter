@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISJTableAdapter'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '一个简单的UITableView适配器'
 
   s.homepage         = 'https://github.com/z624821876'
@@ -19,12 +19,14 @@ Pod::Spec.new do |s|
 #  s.source           = { :path => '/Users/aladin/Documents/项目/ISJTableAdapter'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-  if ENV['lib']
-    s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
-  else
-    s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
-  end
+#  s.ios.deployment_target = '8.0'
+#  if ENV['lib']
+#    s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
+#  else
+#    s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
+#  end
+  s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
+
   s.static_framework = true
 
   # s.resource_bundles = {
