@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'z624821876' => 'yu624821876@163.com' }
-#  s.source           = { :git => 'https://github.com/z624821876/ISJTableAdapter.git', :tag => s.version.to_s }
-  s.source           = { :path => '/Users/aladin/Documents/项目/ISJTableAdapter'}
+  s.source           = { :git => 'https://github.com/z624821876/ISJTableAdapter.git', :tag => s.version.to_s }
+#  s.source           = { :path => '/Users/aladin/Documents/项目/ISJTableAdapter'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
