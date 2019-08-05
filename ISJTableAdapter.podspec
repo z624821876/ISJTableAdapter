@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
 #  if ENV['lib']
 #    s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 #  else
-#   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
+   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
 #  end
-  s.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
+#  s.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 
   s.static_framework = true
 
