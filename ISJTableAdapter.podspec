@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISJTableAdapter'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = '一个简单的UITableView适配器'
 
   s.homepage         = 'https://github.com/z624821876'
@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
 #  if ENV['lib']
 #    s.ios.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 #  else
-   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
+#   s.source_files = 'ISJTableAdapter/Classes/**/*.{h,m}', 'ISJTableAdapter/Classes/*.{h,m}'
 #  end
-#  s.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
+  s.vendored_frameworks = 'ISJTableAdapter-' + s.version.to_s + '/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework'
 
   s.static_framework = true
 

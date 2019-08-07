@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "175537484917F6B3EA807C5B84708028"
-               BuildableName = "libISJTableAdapter.a"
+               BuildableName = "ISJTableAdapter"
                BlueprintName = "ISJTableAdapter"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

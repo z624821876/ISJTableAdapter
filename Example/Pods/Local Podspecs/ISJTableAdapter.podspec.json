@@ -1,6 +1,6 @@
 {
   "name": "ISJTableAdapter",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "summary": "一个简单的UITableView适配器",
   "homepage": "https://github.com/z624821876",
   "license": {
@@ -12,14 +12,11 @@
   },
   "source": {
     "git": "https://github.com/z624821876/ISJTableAdapter.git",
-    "tag": "0.1.9"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": [
-    "ISJTableAdapter/Classes/**/*.{h,m}",
-    "ISJTableAdapter/Classes/*.{h,m}"
-  ],
+  "vendored_frameworks": "ISJTableAdapter-0.2.0/ios/ISJTableAdapter.embeddedframework/ISJTableAdapter.framework",
   "static_framework": true
 }
