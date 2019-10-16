@@ -1,0 +1,1 @@
+../../../../../ISJTableAdapter/Classes/ISJTableAdapterDelegate.h

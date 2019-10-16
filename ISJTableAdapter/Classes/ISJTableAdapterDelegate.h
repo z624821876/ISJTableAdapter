@@ -17,9 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 要创建的Cell/Header 类名 */
 - (NSString *)className;
 
-/** 自适应估算高度 */
-- (CGFloat)estimatedHeight;
-
 @optional
 @property (nonatomic, copy) void(^didSelectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 

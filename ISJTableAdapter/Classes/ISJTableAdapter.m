@@ -52,11 +52,11 @@
     return cellModel.height;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ISJTableAdapterModel *model = _dataSource[indexPath.section];
-    id<ISJTableAdapterViewModelDelegate> cellModel = model.dataSource[indexPath.row];
-    return cellModel.estimatedHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    ISJTableAdapterModel *model = _dataSource[indexPath.section];
+//    id<ISJTableAdapterViewModelDelegate> cellModel = model.dataSource[indexPath.row];
+//    return cellModel.estimatedHeight;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     ISJTableAdapterModel *model = _dataSource[section];
